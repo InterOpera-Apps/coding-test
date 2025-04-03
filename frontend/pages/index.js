@@ -12,8 +12,6 @@ import { FaSort, FaSortUp, FaSortDown } from "react-icons/fa";
 export default function Home() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [question, setQuestion] = useState("");
-  const [answer, setAnswer] = useState("");
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -72,20 +70,6 @@ export default function Home() {
   const filteredUsers = sortedUsers.filter(user =>
     user.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
-
-  const handleAskQuestion = async () => {
-    try {
-      const response = await fetch("http://localhost:8000/api/ai", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question }),
-      });
-      const data = await response.json();
-      setAnswer(data.answer);
-    } catch (error) {
-      console.error("Error in AI request:", error);
-    }
-  };
 
   return (
     <>
@@ -154,24 +138,6 @@ export default function Home() {
             </tbody>
           </Table>
         )}
-
-        <section>
-          <h2>Ask a Question (AI Endpoint)</h2>
-          <div>
-            <input
-              type="text"
-              placeholder="Enter your question..."
-              value={question}
-              onChange={(e) => setQuestion(e.target.value)}
-            />
-            <button onClick={handleAskQuestion}>Ask</button>
-          </div>
-          {answer && (
-            <div style={{ marginTop: "1rem" }}>
-              <strong>AI Response:</strong> {answer}
-            </div>
-          )}
-        </section>
     </>
   );
 }
