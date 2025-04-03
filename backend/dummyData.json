@@ -8,7 +8,7 @@
         "skills": ["Negotiation", "CRM", "Client Relations"],
         "deals": [
           { "client": "Acme Corp", "value": 120000, "status": "Closed Won" },
-          { "client": "Beta Ltd", "value": 50000, "status": "In Progress" },
+          { "client": "Beta Ltd", "value": 50000, "status": "Closed Won" },
           { "client": "Omega Inc", "value": 85000, "status": "Closed Lost" }
         ],
         "clients": [
@@ -60,8 +60,7 @@
           { "client": "Iota Group", "value": 55000, "status": "Closed Lost" }
         ],
         "clients": [
-          { "name": "Eta Co", "industry": "Energy", "contact": "info@etaco.com" },
-          { "name": "Theta Inc", "industry": "Telecommunications", "contact": "sales@thetainc.com" }
+          { "name": "Eta Co", "industry": "Energy", "contact": "info@etaco.com" }
         ]
       },
       {
@@ -72,8 +71,7 @@
         "skills": ["Relationship Building", "Negotiation", "Market Expansion"],
         "deals": [
           { "client": "Iota Ltd", "value": 95000, "status": "Closed Won" },
-          { "client": "Kappa LLC", "value": 45000, "status": "In Progress" },
-          { "client": "Lambda Partners", "value": 105000, "status": "Closed Lost" }
+          { "client": "Kappa LLC", "value": 45000, "status": "In Progress" }
         ],
         "clients": [
           { "name": "Iota Ltd", "industry": "Hospitality", "contact": "contact@iotaltd.com" },
