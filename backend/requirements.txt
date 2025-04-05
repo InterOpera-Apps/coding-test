@@ -1,2 +1,5 @@
 fastapi
 uvicorn
+google-genai
+pytest 
+pytest-asyncio
