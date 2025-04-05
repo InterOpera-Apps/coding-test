@@ -1,0 +1,17 @@
+.env
+Homestead.json
+Homestead.yaml
+.editorconfig
+.idea/
+*.pyc
+*.pyo
+*.conf
+*.service
+*.log
+test.py
+note.txt
+__pycache__
+test*
+node_modules/
+.next/
+packkage-lock.json
