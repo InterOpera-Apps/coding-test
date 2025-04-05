@@ -84,7 +84,6 @@ An intelligent backend API built with **FastAPI** to manage and analyze **Sales 
 ```http
 GET /api/sales-reps?page=1&limit=5
 
-```
 {
   "sales_reps": [
     {
@@ -120,8 +119,6 @@ GET /api/sales-reps?page=1&limit=5
 ```http
 GET /api/sales-reps/1
 
-
-```
 {
   "id": 1,
   "name": "Jane Doe",
@@ -138,7 +135,7 @@ GET /api/sales-reps/1
     }
   ]
 }
-
+```
 
 ### 📊 Get Deal Count by Sales Rep ID
 
@@ -158,14 +155,13 @@ GET /api/sales-reps/1
 ```http
 GET /api/deal-count/2
 
-```
 {
   "rep_id": 2,
   "total_deals": 10,
   "closed_deals": 7,
   "pending_deals": 3
 }
-
+```
 ### 👤 Get Client by Sales Rep ID and Contact
 
 **Endpoint**: `GET /api/clients/{rep_id}/{contact}`
@@ -182,7 +178,6 @@ GET /api/deal-count/2
 ```http
 GET /api/clients/2/john.doe@example.com
 
-```
 {
   "id": 101,
   "name": "John Doe",
@@ -216,3 +211,4 @@ Content-Type: application/json
   "question": "Who is the best performing sales rep in the North region?"
 }
 
+```
