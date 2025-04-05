@@ -1,7 +1,9 @@
 # Coding Challenge: Sales Dashboard with Next.js & FastAPI
 
 ## Overview
+
 Your task is to build a simple, full-stack application featuring:
+
 1. **Next.js** as the frontend framework.
 2. **FastAPI** as the backend API layer.
 3. **Dummy JSON Data** (provided) with sales-related information.
@@ -13,16 +15,19 @@ You will parse the provided **`dummyData.json`** and render its nested structure
 ## Requirements
 
 1. **Data Rendering (Required)**
+
    - The backend should serve the data from `dummyData.json` via a REST endpoint (e.g., `/api/sales-reps`).
    - The frontend must fetch this data asynchronously and display it in a meaningful way (e.g., a list of sales representatives, their deals, skills, etc.).
    - Demonstrate handling of nested JSON structures. For example, you might display each sales rep’s deals, status, and client details.
 
 2. **UI/UX (Required)**
+
    - Use **Next.js** to implement at least one page that renders the fetched data.
    - Provide a basic, intuitive UI for viewing the sales reps’ information (e.g., deals, clients).
    - Show a loading state while data is being fetched, and handle potential errors gracefully.
 
 3. **Backend API (Required)**
+
    - Use **FastAPI** to create an endpoint that returns the JSON data.
    - Implement CORS if needed, so the Next.js app can successfully request data from the FastAPI server.
    - Ensure your API is well-structured and documented (e.g., make use of FastAPI’s automatic docs or docstrings).
@@ -58,19 +63,21 @@ Using these free or trial options can help you add an AI chatbot or similar func
 
 ## Submission Instructions (Fork & Pull Request)
 
-1. **Fork This Repository**  
+1. **Fork This Repository**
+
    - In the top-right corner of this repo page, click on the “Fork” button to create your own copy of the project under your GitHub account.
 
-2. **Clone Your Fork**  
+2. **Clone Your Fork**
    - After forking, clone your forked repository to your local machine:
      ```bash
      git clone https://github.com/<your-username>/<repo-name>.git
      ```
-3. **Implement Your Solution**  
-   - Work on your solution locally (both frontend and backend as described below).  
+3. **Implement Your Solution**
+
+   - Work on your solution locally (both frontend and backend as described below).
    - Commit your changes in a clean, organized manner.
 
-4. **Push Changes & Create a Pull Request**  
+4. **Push Changes & Create a Pull Request**
    - Once you finish your changes, push them to your forked repository:
      ```bash
      git push origin main
@@ -89,24 +96,28 @@ Using these free or trial options can help you add an AI chatbot or similar func
 
 ## Evaluation Criteria
 
-1. **Code Quality & Organization**  
-   - Readability, maintainability, and modularity.  
+1. **Code Quality & Organization**
+
+   - Readability, maintainability, and modularity.
    - Clear separation of concerns between frontend and backend.
 
-2. **Data Handling**  
-   - Ability to fetch, parse, and display nested data structures.  
+2. **Data Handling**
+
+   - Ability to fetch, parse, and display nested data structures.
    - Proper use of asynchronous operations and error handling.
 
-3. **UI/UX**  
-   - Clean, intuitive interface.  
+3. **UI/UX**
+
+   - Clean, intuitive interface.
    - Demonstration of loading states and helpful user feedback.
 
-4. **AI Integration (Bonus)**  
-   - Creativity and correctness of the AI feature.  
+4. **AI Integration (Bonus)**
+
+   - Creativity and correctness of the AI feature.
    - Proper request/response handling on both frontend and backend.
 
-5. **Documentation**  
-   - Clarity in the instructions to set up and run the project.  
+5. **Documentation**
+   - Clarity in the instructions to set up and run the project.
    - Brief explanation of design choices and potential improvements.
 
 ---
@@ -114,37 +125,46 @@ Using these free or trial options can help you add an AI chatbot or similar func
 ## Getting Started
 
 1. **Clone or Download** this repository (or fork it, as described above).
-2. **Backend Setup**  
-   - Navigate to the `backend` directory.  
-   - Create a virtual environment (optional but recommended).  
-   - Install dependencies:  
+2. **Backend Setup**
+
+   - Navigate to the `backend` directory.
+   - Create a virtual environment (optional but recommended).
+   - Install dependencies:
      ```bash
      pip install -r requirements.txt
-     ```  
-   - Run the server:  
+     ```
+   - Run the server:
      ```bash
      uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-     ```  
+     ```
    - Confirm the API works by visiting `http://localhost:8000/docs`.
 
-3. **Frontend Setup**  
-   - Navigate to the `frontend` directory.  
-   - Install dependencies:  
+   - Run unit test:
+     ```bash
+     pytest -v
+     ```
+
+3. **Frontend Setup**
+
+   - Navigate to the `frontend` directory.
+   - Install dependencies:
      ```bash
      npm install
-     ```  
-   - Start the development server:  
+     ```
+   - Start the development server:
      ```bash
      npm run dev
-     ```  
+     ```
    - Open `http://localhost:3000` to view your Next.js app.
 
-4. **Data**  
+4. **Data**
+
    - The file `dummyData.json` is located in the `backend` directory (or wherever you place it).
    - Adjust your API endpoint and frontend calls if you use different paths or filenames.
 
-5. **AI Feature (If Implemented)**  
-   - Add a POST endpoint to handle AI requests, for example `/api/ai`.  
+5. **AI Feature (If Implemented)**
+
+   - Add a POST endpoint to handle AI requests, for example `/api/ai`.
    - In the frontend, create a simple form to collect user questions and display the returned answer.
    - Feel free to use any **free or trial LLM API** mentioned above or implement a rule-based approach.
 
