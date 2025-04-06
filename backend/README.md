@@ -4,6 +4,10 @@ An intelligent backend API built with **FastAPI** to manage and analyze **Sales 
 
 ---
 
+
+https://github.com/user-attachments/assets/65572815-bdaa-444f-9d4a-fe48fd19166d
+
+
 ## 🚀 Features
 
 ### 📋 Sales Management
